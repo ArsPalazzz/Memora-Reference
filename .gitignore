@@ -1,0 +1,13 @@
+# Obsidian — локальное состояние UI (не синхронизировать)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/graph.json
+
+# Quartz / Node (на будущее)
+node_modules/
+public/
+.quartz-cache/
+
+# OS
+.DS_Store
+Thumbs.db
