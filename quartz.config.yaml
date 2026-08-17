@@ -178,10 +178,7 @@ plugins:
       position: left
       priority: 50
   - source: "@quartz-community/graph"
-    enabled: true
-    layout:
-      position: right
-      priority: 10
+    enabled: false
   - source: "@quartz-community/search"
     enabled: true
     layout:
@@ -238,13 +235,7 @@ plugins:
       position: afterBody
       priority: 10
   - source: "@quartz-community/footer"
-    enabled: true
-    options:
-      links:
-        "Practice words in Memora": "#"
-    layout:
-      position: footer
-      priority: 50
+    enabled: false
   - source: "@quartz-community/recent-notes"
     enabled: false
   - source: "@quartz-community/spacer"
@@ -288,7 +279,7 @@ layout:
     toolbar:
       priority: 35
       direction: row
-      gap: 0.5rem
+      gap: 1rem
   byPageType:
     "404":
       positions:
@@ -301,7 +292,6 @@ layout:
         - reader-mode
       positions:
         right:
-          - graph
           - backlinks
     tag:
       exclude:

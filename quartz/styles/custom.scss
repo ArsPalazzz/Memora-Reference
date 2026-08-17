@@ -177,3 +177,42 @@ body[saved-theme="dark"] .quartz-lightbox-close {
 article img.quartz-lightbox-target {
   cursor: zoom-in;
 }
+
+.search {
+  max-width: 20rem;
+}
+
+@media all and ($mobile) {
+  .sidebar.left > .spacer {
+    display: none;
+  }
+
+  .sidebar.left .flex-component {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .sidebar.left .search {
+    flex-grow: 1;
+    max-width: none;
+    min-width: 0;
+    width: 100%;
+  }
+
+  // Compact top bar: search + theme + menu. Site title lives in the explorer overlay.
+  .sidebar.left .page-title {
+    display: none;
+  }
+
+  html.mobile-no-scroll .sidebar.left .page-title {
+    display: block;
+    position: fixed;
+    top: 0.9rem;
+    left: 1rem;
+    right: 3.5rem;
+    z-index: 102;
+    margin: 0;
+    font-size: 1.15rem;
+    line-height: 1.3;
+  }
+}
