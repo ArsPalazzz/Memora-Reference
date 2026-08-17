@@ -1,118 +1,120 @@
 const OVERLAY_ID = "quartz-image-lightbox"
-const TARGET_CLASS = "quartz-lightbox-target"
 
 let overlayEl: HTMLDivElement | null = null
 let overlayImg: HTMLImageElement | null = null
 let closeButtonEl: HTMLButtonElement | null = null
-let lastFocusedEl: HTMLElement | null = null
+let ignoreCloseUntil = 0
+
+const isContentImage = (img: HTMLImageElement): boolean => {
+  if (img.id === "quartz-lightbox-image" || img.classList.contains("quartz-lightbox-image")) {
+    return false
+  }
+  if (img.closest(`#${OVERLAY_ID}`)) return false
+  if (img.closest(".explorer, .search, .graph, .popover, button, svg")) return false
+  return Boolean(img.closest("article, .markdown-preview-view"))
+}
 
 const ensureOverlay = () => {
-  if (overlayEl) return
+  overlayEl = document.getElementById(OVERLAY_ID) as HTMLDivElement | null
+  if (!overlayEl) {
+    overlayEl = document.createElement("div")
+    overlayEl.id = OVERLAY_ID
+    overlayEl.className = "quartz-lightbox-overlay"
+    overlayEl.setAttribute("role", "dialog")
+    overlayEl.setAttribute("aria-modal", "true")
+    overlayEl.setAttribute("aria-label", "Image preview")
+    overlayEl.innerHTML =
+      '<button class="quartz-lightbox-close" type="button" aria-label="Close">&times;</button>' +
+      '<img id="quartz-lightbox-image" class="quartz-lightbox-image" alt="" />'
+  }
 
-  overlayEl = document.createElement("div")
-  overlayEl.id = OVERLAY_ID
-  overlayEl.className = "quartz-lightbox-overlay"
-  overlayEl.setAttribute("role", "dialog")
-  overlayEl.setAttribute("aria-modal", "true")
-  overlayEl.style.display = "none"
-
-  overlayEl.innerHTML = `
-    <div class="quartz-lightbox-content">
-      <button class="quartz-lightbox-close" aria-label="Close lightbox" type="button">&times;</button>
-      <img class="quartz-lightbox-image" alt="" />
-    </div>
-  `
-
-  document.body.appendChild(overlayEl)
   overlayImg = overlayEl.querySelector(".quartz-lightbox-image")
   closeButtonEl = overlayEl.querySelector(".quartz-lightbox-close")
 
-  overlayEl.addEventListener("click", (e) => {
-    // Clicking on the backdrop closes; clicking inside doesn't.
-    if (e.target === overlayEl) closeLightbox()
-  })
-
-  closeButtonEl?.addEventListener("click", () => closeLightbox())
+  // Keep the overlay outside <body> so SPA morphs do not delete it.
+  if (overlayEl.parentElement !== document.documentElement) {
+    document.documentElement.appendChild(overlayEl)
+  }
 }
 
 const openLightbox = (src: string, alt: string) => {
   ensureOverlay()
-  if (!overlayEl || !overlayImg) return
-
-  lastFocusedEl = document.activeElement instanceof HTMLElement ? document.activeElement : null
+  if (!overlayEl || !overlayImg || !src) return
 
   overlayImg.src = src
   overlayImg.alt = alt ?? ""
-
-  overlayEl.style.display = "flex"
   overlayEl.classList.add("is-open")
-
-  // Prevent background scrolling while the overlay is open.
   document.body.style.overflow = "hidden"
-
+  ignoreCloseUntil = Date.now() + 400
   closeButtonEl?.focus?.()
 }
 
 const closeLightbox = () => {
   if (!overlayEl) return
+  if (Date.now() < ignoreCloseUntil) return
 
   overlayEl.classList.remove("is-open")
-  overlayEl.style.display = "none"
-  overlayImg && (overlayImg.src = overlayImg.src) // keep cached src; no-op for browser cache
-
+  if (overlayImg) overlayImg.removeAttribute("src")
   document.body.style.overflow = ""
-
-  lastFocusedEl?.focus?.()
-  lastFocusedEl = null
 }
 
-const enableTargets = () => {
-  // We mark images that should open the lightbox.
-  // Using delegation means we only need to add a class once.
-  const imgs = document.querySelectorAll("article img, .markdown-preview-view img")
-  imgs.forEach((img) => {
-    if (!(img instanceof HTMLImageElement)) return
-    if (img.classList.contains(TARGET_CLASS)) return
-    img.classList.add(TARGET_CLASS)
-    img.loading = img.loading || "lazy"
-    img.decoding = img.decoding || "async"
-  })
+const imageFromEvent = (target: EventTarget | null): HTMLImageElement | null => {
+  if (!(target instanceof Element)) return null
+  const img = target.closest("img")
+  if (!(img instanceof HTMLImageElement)) return null
+  if (!isContentImage(img)) return null
+  return img
 }
 
-let delegationBound = false
-const setupDelegation = () => {
-  if (delegationBound) return
-  delegationBound = true
+let bound = false
+const bindOnce = () => {
+  if (bound) return
+  bound = true
 
-  document.addEventListener("click", (e) => {
-    const target = e.target
-    if (!(target instanceof Element)) return
+  const activate = (event: Event) => {
+    if (overlayEl?.classList.contains("is-open")) return
+    const img = imageFromEvent(event.target)
+    if (!img) return
 
-    const img = target.closest?.("img")
-    if (!(img instanceof HTMLImageElement)) return
-    if (!img.classList.contains(TARGET_CLASS)) return
+    event.preventDefault()
+    event.stopPropagation()
+    openLightbox(img.currentSrc || img.src, img.alt)
+  }
 
-    e.preventDefault()
-    e.stopPropagation()
+  document.addEventListener("click", activate, true)
 
-    // Use the actual currentSrc (important for responsive/lazy cases).
-    const src = img.currentSrc || img.src
-    openLightbox(src, img.alt)
-  })
+  document.addEventListener(
+    "keydown",
+    (event) => {
+      if (event.key === "Escape" && overlayEl?.classList.contains("is-open")) {
+        ignoreCloseUntil = 0
+        closeLightbox()
+      }
+    },
+    true,
+  )
 
-  document.addEventListener("keydown", (e) => {
-    if (e.key !== "Escape") return
-    // Only close if overlay is open.
-    if (overlayEl?.classList.contains("is-open")) closeLightbox()
-  })
+  document.addEventListener(
+    "click",
+    (event) => {
+      if (!overlayEl?.classList.contains("is-open")) return
+      const target = event.target
+      if (!(target instanceof Element)) return
+      if (target.closest(".quartz-lightbox-image")) return
+      if (target.closest(".quartz-lightbox-close") || target === overlayEl) {
+        ignoreCloseUntil = 0
+        closeLightbox()
+      }
+    },
+    true,
+  )
 }
 
 const initLightbox = () => {
-  enableTargets()
   ensureOverlay()
-  setupDelegation()
+  bindOnce()
 }
 
+initLightbox()
 document.addEventListener("DOMContentLoaded", initLightbox)
 document.addEventListener("nav", initLightbox)
-
