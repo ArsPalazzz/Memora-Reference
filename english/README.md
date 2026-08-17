@@ -1,8 +1,12 @@
+---
+title: English
+---
+
 # English
 
 Заметки по английскому: грамматика, слова, разборы, план занятий.
 
-← [[../README|Memora Reference]]
+← [[../index|Memora Reference]]
 
 ## Как пользоваться
 

@@ -3,11 +3,18 @@
 .obsidian/workspace-mobile.json
 .obsidian/graph.json
 
-# Quartz / Node (на будущее)
+# Quartz / Node
 node_modules/
 public/
 .quartz-cache/
+.quartz/
+prof/
+tsconfig.tsbuildinfo
+.turbo/
 
 # OS
 .DS_Store
 Thumbs.db
+
+# Local preview screenshots
+memora-preview-*.png

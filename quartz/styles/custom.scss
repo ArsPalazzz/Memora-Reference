@@ -1,0 +1,179 @@
+@use "./variables.scss" as *;
+
+// Memora Reference — textbook-style refinements on top of theme tokens
+
+article {
+  line-height: 1.75;
+  font-size: 1.05rem;
+
+  @media all and ($mobile) {
+    padding-inline: 0.75rem;
+    font-size: 1.0625rem;
+    line-height: 1.8;
+  }
+}
+
+blockquote {
+  background: color-mix(in srgb, var(--secondary) 7%, var(--light));
+  border-left: 4px solid var(--secondary);
+  border-radius: 0 6px 6px 0;
+  padding: 0.75rem 1.25rem;
+  margin: 1.25rem 0;
+  font-style: italic;
+}
+
+.table-container > table {
+  width: 100%;
+  margin: 1.25rem 0;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 0.95rem;
+
+  th {
+    background: color-mix(in srgb, var(--secondary) 10%, var(--light));
+    color: var(--dark);
+    border-bottom: 2px solid color-mix(in srgb, var(--secondary) 35%, var(--lightgray));
+    font-weight: $semiBoldWeight;
+  }
+
+  tbody tr:nth-child(even) {
+    background: color-mix(in srgb, var(--secondary) 4%, var(--light));
+  }
+}
+
+pre {
+  background: color-mix(in srgb, var(--secondary) 5%, var(--light));
+  border-color: color-mix(in srgb, var(--secondary) 18%, var(--lightgray));
+}
+
+figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
+  border-color: color-mix(in srgb, var(--secondary) 22%, var(--lightgray));
+  color: var(--secondary);
+}
+
+.callout[data-callout="note"],
+.callout[data-callout="info"],
+.callout[data-callout="abstract"] {
+  --color: var(--secondary);
+  --border: color-mix(in srgb, var(--secondary) 35%, transparent);
+  --bg: color-mix(in srgb, var(--secondary) 8%, var(--light));
+}
+
+.callout[data-callout="example"],
+.callout[data-callout="quote"] {
+  --border: color-mix(in srgb, var(--secondary) 25%, transparent);
+  --bg: color-mix(in srgb, var(--secondary) 5%, var(--light));
+}
+
+.breadcrumb-container a:hover {
+  color: var(--secondary);
+}
+
+.explorer .tree-item-self.active,
+.explorer a.active {
+  color: var(--secondary);
+  font-weight: $semiBoldWeight;
+}
+
+.page-title a:hover {
+  color: var(--secondary);
+}
+
+article img,
+.markdown-preview-view img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+article img:not(a img) {
+  margin: 1rem auto;
+  border-radius: 6px;
+}
+
+@media all and ($mobile) {
+  .page > #quartz-body > .center {
+    padding-inline: 0.25rem;
+  }
+
+  .graph > .graph-outer {
+    height: 200px;
+  }
+}
+
+/* Lightbox (fullscreen image view) */
+.quartz-lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.74);
+  padding: 1rem;
+}
+
+body:not([saved-theme="dark"]) .quartz-lightbox-overlay {
+  background: rgba(255, 255, 255, 0.86);
+}
+
+.quartz-lightbox-overlay.is-open {
+  display: flex;
+}
+
+.quartz-lightbox-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quartz-lightbox-image {
+  max-width: 95vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 18px 50px #00000055;
+}
+
+body:not([saved-theme="dark"]) .quartz-lightbox-image {
+  box-shadow: 0 18px 50px #00000022;
+}
+
+.quartz-lightbox-close {
+  position: fixed;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--secondary);
+  background: color-mix(in srgb, var(--light) 80%, transparent);
+  color: var(--dark);
+  cursor: pointer;
+  font-size: 1.5rem;
+  line-height: 1;
+  user-select: none;
+  backdrop-filter: blur(8px);
+}
+
+body[saved-theme="dark"] .quartz-lightbox-close {
+  background: color-mix(in srgb, var(--dark) 20%, transparent);
+  color: var(--light);
+}
+
+.quartz-lightbox-close:hover {
+  border-color: var(--tertiary);
+}
+
+/* Mark clickable images */
+article img.quartz-lightbox-target {
+  cursor: zoom-in;
+}
