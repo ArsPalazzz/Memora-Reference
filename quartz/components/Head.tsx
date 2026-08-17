@@ -60,6 +60,11 @@ export default (() => {
         )}
         <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossOrigin="anonymous" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#5961d3" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-title" content="Memora" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
 
         <meta name="og:site_name" content={cfg.pageTitle}></meta>
         <meta property="og:title" content={title} />
@@ -94,6 +99,7 @@ export default (() => {
         <link rel="icon" href={appleTouchIconPath} type="image/png" sizes="192x192" />
         <link rel="apple-touch-icon" href={appleTouchIconPath} sizes="180x180" />
         <link rel="apple-touch-icon-precomposed" href={appleTouchIconPath} />
+        <link rel="manifest" href={joinSegments(baseDir, "static/manifest.webmanifest")} />
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />
 
