@@ -199,20 +199,63 @@ article img.quartz-lightbox-target {
     width: 100%;
   }
 
-  // Compact top bar: search + theme + menu. Site title lives in the explorer overlay.
+  // Hide the header title on mobile. Label sits at the bottom of the full-screen explorer.
   .sidebar.left .page-title {
     display: none;
   }
 
-  html.mobile-no-scroll .sidebar.left .page-title {
-    display: block;
+  html.mobile-no-scroll,
+  html.mobile-no-scroll body {
+    overflow: hidden;
+    height: 100dvh;
+    overscroll-behavior: none;
+  }
+
+  html.mobile-no-scroll .page,
+  html.mobile-no-scroll .page > #quartz-body {
+    overflow: hidden;
+    overscroll-behavior: none;
+  }
+
+  .explorer:not(.collapsed) > .explorer-content {
     position: fixed;
-    top: 0.9rem;
+    inset: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100dvh;
+    max-width: 100vw;
+    max-height: 100dvh;
+    transform: none;
+    padding: 4rem 1rem 4.5rem;
+    overflow: hidden;
+    overscroll-behavior: none;
+  }
+
+  .explorer:not(.collapsed) > .explorer-content > ul.overflow {
+    height: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
+  }
+
+  .explorer:not(.collapsed) > .explorer-content::after {
+    content: "Memora Reference";
+    position: absolute;
+    bottom: 1.25rem;
     left: 1rem;
-    right: 3.5rem;
-    z-index: 102;
-    margin: 0;
-    font-size: 1.15rem;
-    line-height: 1.3;
+    right: 1rem;
+    font-family: var(--titleFont);
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--dark);
+    pointer-events: none;
+  }
+
+  // Fade only when the file list actually overflows; don't wash out a short tree.
+  .explorer-content ul.overflow.gradient-active {
+    -webkit-mask-image: none;
+    mask-image: none;
   }
 }

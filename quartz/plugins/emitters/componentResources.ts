@@ -10,6 +10,8 @@ import popoverScript from "../../components/scripts/popover.inline"
 import lazyImagesScript from "../../components/scripts/lazy-images.inline"
 // @ts-ignore
 import lightboxImagesScript from "../../components/scripts/lightbox-images.inline"
+// @ts-ignore
+import lockExplorerScrollScript from "../../components/scripts/lock-explorer-scroll.inline"
 import baseStyles from "../../styles/base.scss"
 import customStyles from "../../styles/custom.scss"
 import popoverStyle from "../../components/styles/popover.scss"
@@ -96,6 +98,7 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
 
   componentResources.afterDOMLoaded.push(lazyImagesScript)
   componentResources.afterDOMLoaded.push(lightboxImagesScript)
+  componentResources.afterDOMLoaded.push(lockExplorerScrollScript)
 
   if (cfg.analytics?.provider === "google") {
     const tagId = cfg.analytics.tagId
