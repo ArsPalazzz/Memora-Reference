@@ -8,42 +8,41 @@ componentRegistry.setOptionOverrides("@quartz-community/explorer", {
     const name = (node.slugSegment || "").toLowerCase()
     if (name === "tags") return false
     const slug = (node.slug || "").toLowerCase()
-    if (slug.indexOf("/inbox") !== -1 || slug.indexOf("inbox/") !== -1) return false
+    if (slug.indexOf("/inbox") !== -1) return false
+    if (slug.indexOf("inbox/") !== -1) return false
     if (slug.indexOf("study-plan") !== -1) return false
     return true
   },
   mapFn: (node) => {
     if (!node.slugSegment) {
-      const english = node.children.find(function (child) {
-        return (child.slugSegment || "").toLowerCase() === "english"
-      })
+      let english = null
+      for (let i = 0; i < node.children.length; i++) {
+        const child = node.children[i]
+        if ((child.slugSegment || "").toLowerCase() === "english") {
+          english = child
+          break
+        }
+      }
       if (english) {
         node.children = english.children
       }
     }
 
-    const titles = {
-      rules: "Rules",
-      words: "Words",
-      examples: "Examples",
-      readme: "English",
-    }
     const key = (node.slugSegment || "").toLowerCase()
-    if (titles[key]) {
-      node.displayName = titles[key]
-    }
+    if (key === "rules") node.displayName = "Rules"
+    if (key === "words") node.displayName = "Words"
+    if (key === "examples") node.displayName = "Examples"
+    if (key === "readme") node.displayName = "English"
   },
   sortFn: (a, b) => {
     const order = ["rules", "words", "examples", "readme"]
-    const rank = (node) => {
-      const key = (node.slugSegment || "").toLowerCase()
-      const idx = order.indexOf(key)
-      if (idx !== -1) return idx
-      return node.isFolder ? 10 : 20
-    }
-
-    const bySection = rank(a) - rank(b)
-    if (bySection !== 0) return bySection
+    const keyA = (a.slugSegment || "").toLowerCase()
+    const keyB = (b.slugSegment || "").toLowerCase()
+    const idxA = order.indexOf(keyA)
+    const idxB = order.indexOf(keyB)
+    const rankA = idxA !== -1 ? idxA : a.isFolder ? 10 : 20
+    const rankB = idxB !== -1 ? idxB : b.isFolder ? 10 : 20
+    if (rankA !== rankB) return rankA - rankB
     if (a.isFolder && !b.isFolder) return -1
     if (!a.isFolder && b.isFolder) return 1
     return a.displayName.localeCompare(b.displayName, undefined, { numeric: true })
