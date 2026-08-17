@@ -2,29 +2,62 @@ import { loadQuartzConfig, loadQuartzLayout } from "./quartz/plugins/loader/conf
 import { componentRegistry } from "./quartz/components/registry"
 
 componentRegistry.setOptionOverrides("@quartz-community/explorer", {
+  folderDefaultState: "open",
+  useSavedState: false,
   filterFn: (node) => {
-    const publishedSections = new Set(["Rules", "Words", "Examples"])
-    if (node.slugSegment === "tags") return false
+    const segment = (node.slugSegment ?? "").toLowerCase()
+    if (segment === "tags") return false
 
-    const segments = node.slugSegments ?? []
-    if (segments.length === 0) return true
+    const slug = (node.slug ?? "").toLowerCase().replace(/\/index$/, "")
+    const parts = slug.split("/").filter(Boolean)
 
-    if (segments.length === 1) {
-      return node.slugSegment === "english"
-    }
+    // Root of the explorer trie (and the site index itself).
+    if (parts.length === 0) return true
 
-    if (segments[0] === "english" && segments.length === 2) {
-      if (node.isFolder) {
-        return publishedSections.has(node.slugSegment ?? "")
-      }
-      return node.slugSegment?.toLowerCase() === "readme"
-    }
-
-    if (segments[0] === "english" && publishedSections.has(segments[1])) {
-      return true
-    }
+    if (parts[0] !== "english") return false
+    if (parts.length === 1) return true
+    if (parts[1] === "readme") return true
+    if (["rules", "words", "examples"].includes(parts[1])) return true
 
     return false
+  },
+  mapFn: (node) => {
+    // Show Rules / Words / Examples at the top of the sidebar,
+    // instead of nesting them under english → English.
+    if (!node.slugSegment) {
+      const english = node.children.find(
+        (child) => (child.slugSegment ?? "").toLowerCase() === "english",
+      )
+      if (english) {
+        node.children = english.children
+      }
+    }
+
+    const titles = {
+      rules: "Rules",
+      words: "Words",
+      examples: "Examples",
+      readme: "English",
+    }
+    const key = (node.slugSegment ?? "").toLowerCase()
+    if (titles[key]) {
+      node.displayName = titles[key]
+    }
+  },
+  sortFn: (a, b) => {
+    const order = ["rules", "words", "examples", "readme"]
+    const rank = (node) => {
+      const key = (node.slugSegment ?? "").toLowerCase()
+      const idx = order.indexOf(key)
+      if (idx !== -1) return idx
+      return node.isFolder ? 10 : 20
+    }
+
+    const bySection = rank(a) - rank(b)
+    if (bySection !== 0) return bySection
+    if (a.isFolder && !b.isFolder) return -1
+    if (!a.isFolder && b.isFolder) return 1
+    return a.displayName.localeCompare(b.displayName, undefined, { numeric: true })
   },
 })
 
