@@ -5,29 +5,18 @@ componentRegistry.setOptionOverrides("@quartz-community/explorer", {
   folderDefaultState: "open",
   useSavedState: false,
   filterFn: (node) => {
-    const segment = (node.slugSegment ?? "").toLowerCase()
-    if (segment === "tags") return false
-
-    const slug = (node.slug ?? "").toLowerCase().replace(/\/index$/, "")
-    const parts = slug.split("/").filter(Boolean)
-
-    // Root of the explorer trie (and the site index itself).
-    if (parts.length === 0) return true
-
-    if (parts[0] !== "english") return false
-    if (parts.length === 1) return true
-    if (parts[1] === "readme") return true
-    if (["rules", "words", "examples"].includes(parts[1])) return true
-
-    return false
+    const name = (node.slugSegment || "").toLowerCase()
+    if (name === "tags") return false
+    const slug = (node.slug || "").toLowerCase()
+    if (slug.indexOf("/inbox") !== -1 || slug.indexOf("inbox/") !== -1) return false
+    if (slug.indexOf("study-plan") !== -1) return false
+    return true
   },
   mapFn: (node) => {
-    // Show Rules / Words / Examples at the top of the sidebar,
-    // instead of nesting them under english → English.
     if (!node.slugSegment) {
-      const english = node.children.find(
-        (child) => (child.slugSegment ?? "").toLowerCase() === "english",
-      )
+      const english = node.children.find(function (child) {
+        return (child.slugSegment || "").toLowerCase() === "english"
+      })
       if (english) {
         node.children = english.children
       }
@@ -39,7 +28,7 @@ componentRegistry.setOptionOverrides("@quartz-community/explorer", {
       examples: "Examples",
       readme: "English",
     }
-    const key = (node.slugSegment ?? "").toLowerCase()
+    const key = (node.slugSegment || "").toLowerCase()
     if (titles[key]) {
       node.displayName = titles[key]
     }
@@ -47,7 +36,7 @@ componentRegistry.setOptionOverrides("@quartz-community/explorer", {
   sortFn: (a, b) => {
     const order = ["rules", "words", "examples", "readme"]
     const rank = (node) => {
-      const key = (node.slugSegment ?? "").toLowerCase()
+      const key = (node.slugSegment || "").toLowerCase()
       const idx = order.indexOf(key)
       if (idx !== -1) return idx
       return node.isFolder ? 10 : 20
