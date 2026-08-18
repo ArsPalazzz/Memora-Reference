@@ -1,3 +1,11 @@
+import {
+  endsWith,
+  getFileExtension,
+  slugifyPath,
+  stripSlashes,
+} from "@quartz-community/utils"
+import type { FilePath, FullSlug } from "@quartz-community/utils"
+
 // Re-export shared path utilities from @quartz-community/utils
 export {
   isFilePath,
@@ -6,7 +14,6 @@ export {
   isRelativeURL,
   isAbsoluteURL,
   getFullSlug,
-  slugifyFilePath,
   simplifySlug,
   joinSegments,
   endsWith,
@@ -31,6 +38,23 @@ export type {
   RelativeURL,
   TransformOptions,
 } from "@quartz-community/utils"
+
+/**
+ * Like `@quartz-community/utils` slugifyFilePath, but `folder/folder.md` stays
+ * a child note instead of becoming `folder/index`. `index.md` / `_index.md`
+ * still become the folder landing page.
+ */
+export function slugifyFilePath(fp: FilePath, excludeExt?: boolean): FullSlug {
+  const stripped = stripSlashes(fp)
+  const ext = getFileExtension(stripped)
+  const withoutFileExt = ext ? stripped.replace(new RegExp(ext + "$"), "") : stripped
+  const finalExt = excludeExt || [".md", ".html", undefined].includes(ext) ? "" : ext
+  let slug = slugifyPath(withoutFileExt)
+  if (endsWith(slug, "_index")) {
+    slug = slug.replace(/_index$/, "index")
+  }
+  return (slug + (finalExt ?? "")) as FullSlug
+}
 
 // --- v5-specific exports below ---
 

@@ -120,16 +120,14 @@ describe("transforms", () => {
         ["test/special chars?.md", "test/special-chars"],
         ["test/special chars #3.md", "test/special-chars-3"],
         ["cool/what about r&d?.md", "cool/what-about-r-and-d"],
-        // Obsidian "Folder Notes" convention: folder/folder.md is the folder's landing page
-        ["characters/characters.md", "characters/index"],
-        ["fiction/books/books.md", "fiction/books/index"],
-        ["a/a/a.md", "a/a/index"],
-        // Top-level single-segment: NOT rewritten (parentFolder storage, out of scope)
+        // Same-name file is a regular note, not a folder index (Obsidian default)
+        ["characters/characters.md", "characters/characters"],
+        ["fiction/books/books.md", "fiction/books/books"],
+        ["a/a/a.md", "a/a/a"],
+        ["english/Rules/Conditionals/Conditionals.md", "english/rules/conditionals/conditionals"],
         ["characters.md", "characters"],
-        // Non-matching last two segments: no rewrite
         ["characters/alice.md", "characters/alice"],
         ["characters/sub/characters.md", "characters/sub/characters"],
-        // Folder literally named "index" is unaffected by the rewrite
         ["index/index.md", "index/index"],
         ["docs/index/index.md", "docs/index/index"],
       ],
@@ -139,14 +137,13 @@ describe("transforms", () => {
     )
   })
 
-  test("slugifyFilePath + simplifySlug end-to-end canonicalization", () => {
-    // Both folder-note conventions must produce identical user-facing URLs.
+  test("slugifyFilePath keeps folder/folder.md distinct from folder/index.md", () => {
     const indexStyle = path.simplifySlug(path.slugifyFilePath("characters/index.md" as any))
-    const folderNameStyle = path.simplifySlug(
+    const sameNameStyle = path.simplifySlug(
       path.slugifyFilePath("characters/characters.md" as any),
     )
-    assert.strictEqual(indexStyle, folderNameStyle)
     assert.strictEqual(indexStyle, "characters/")
+    assert.strictEqual(sameNameStyle, "characters/characters")
   })
 
   test("transformInternalLink", () => {

@@ -1,6 +1,6 @@
 import { computePosition, flip, inline, shift } from "@floating-ui/dom"
 import { normalizeRelativeURLs } from "../../util/path"
-import { fetchCanonical } from "./util"
+import { fetchCanonical, resolveClientUrl, siteBasePath } from "./util"
 
 const p = new DOMParser()
 let activeAnchor: HTMLAnchorElement | null = null
@@ -42,11 +42,16 @@ async function mouseEnterHandler(
     }
   }
 
-  const targetUrl = new URL(link.href)
+  const targetUrl = resolveClientUrl(
+    link.getAttribute("href") || link.href,
+    window.location.href,
+    document.body?.dataset?.slug,
+    siteBasePath(document.body?.dataset?.basepath),
+  )
   const hash = decodeURIComponent(targetUrl.hash)
   targetUrl.hash = ""
   targetUrl.search = ""
-  const popoverId = `popover-${link.pathname}`
+  const popoverId = `popover-${targetUrl.pathname}`
   const prevPopoverElement = document.getElementById(popoverId)
 
   // dont refetch if there's already a popover

@@ -1,3 +1,44 @@
+/** Strip a trailing slash from the deployed subpath (`/Memora-Reference`). */
+export function siteBasePath(raw: string | undefined): string {
+  if (!raw) return ""
+  return raw.endsWith("/") ? raw.slice(0, -1) : raw
+}
+
+export function isFolderPageSlug(slug: string | undefined): boolean {
+  return slug === "index" || !!slug?.endsWith("/index")
+}
+
+/**
+ * GitHub project Pages live under a subpath. Root-relative links like
+ * `/english/rules` and `../..` from a folder URL *without* a trailing slash
+ * both resolve to `https://user.github.io/english/...`, dropping the repo prefix.
+ */
+export function ensureSitePathname(pathname: string, basePath: string): string {
+  const base = siteBasePath(basePath)
+  if (!base) return pathname
+  if (pathname === base || pathname.startsWith(`${base}/`)) return pathname
+  return `${base}${pathname.startsWith("/") ? "" : "/"}${pathname}`
+}
+
+export function resolveClientUrl(
+  href: string,
+  currentHref: string,
+  slug: string | undefined,
+  basePath: string | undefined,
+): URL {
+  const base = new URL(currentHref)
+  if (isFolderPageSlug(slug) && !base.pathname.endsWith("/")) {
+    base.pathname += "/"
+  }
+  const url = new URL(href, base)
+  url.pathname = ensureSitePathname(url.pathname, siteBasePath(basePath))
+  return url
+}
+
+export function isQuartzHtml(text: string): boolean {
+  return /<meta[^>]*name=["']generator["'][^>]*content=["']Quartz["']/i.test(text)
+}
+
 export function registerEscapeHandler(outsideContainer: HTMLElement | null, cb: () => void) {
   if (!outsideContainer) return
   function click(this: HTMLElement, e: HTMLElementEventMap["click"]) {
