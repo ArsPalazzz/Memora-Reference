@@ -4,6 +4,7 @@ import {
   ensureSitePathname,
   isFolderPageSlug,
   isQuartzHtml,
+  preserveCollapsedExplorer,
   resolveClientUrl,
   siteBasePath,
 } from "./util"
@@ -63,5 +64,48 @@ describe("site URL helpers", () => {
   test("isQuartzHtml detects the generator meta tag", () => {
     assert.strictEqual(isQuartzHtml('<meta name="generator" content="Quartz" />'), true)
     assert.strictEqual(isQuartzHtml("<title>Site not found · GitHub Pages</title>"), false)
+  })
+})
+
+describe("preserveCollapsedExplorer", () => {
+  function explorerRoot(collapsed: boolean) {
+    const classes = new Set(collapsed ? ["explorer", "collapsed"] : ["explorer"])
+    let ariaExpanded = collapsed ? "false" : "true"
+    const explorer = {
+      classList: {
+        contains: (name: string) => classes.has(name),
+        add: (name: string) => {
+          classes.add(name)
+        },
+      },
+      getAttribute: (name: string) => (name === "aria-expanded" ? ariaExpanded : null),
+      setAttribute: (name: string, value: string) => {
+        if (name === "aria-expanded") ariaExpanded = value
+      },
+    }
+    return {
+      root: { querySelector: () => explorer },
+      classes,
+      getAriaExpanded: () => ariaExpanded,
+    }
+  }
+
+  test("copies collapsed from the live explorer onto the next document", () => {
+    const from = explorerRoot(true)
+    const to = explorerRoot(false)
+
+    preserveCollapsedExplorer(from.root as ParentNode, to.root as ParentNode)
+
+    assert.ok(to.classes.has("collapsed"))
+    assert.strictEqual(to.getAriaExpanded(), "false")
+  })
+
+  test("leaves an open explorer open so the close animation can play", () => {
+    const from = explorerRoot(false)
+    const to = explorerRoot(false)
+
+    preserveCollapsedExplorer(from.root as ParentNode, to.root as ParentNode)
+
+    assert.strictEqual(to.classes.has("collapsed"), false)
   })
 })

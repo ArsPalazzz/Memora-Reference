@@ -39,6 +39,20 @@ export function isQuartzHtml(text: string): boolean {
   return /<meta[^>]*name=["']generator["'][^>]*content=["']Quartz["']/i.test(text)
 }
 
+/**
+ * Incoming pages render Explorer without `.collapsed`. If the live panel is
+ * already closed, copy that class onto the next document so SPA morph does not
+ * briefly open it and play the close animation.
+ */
+export function preserveCollapsedExplorer(from: ParentNode, to: ParentNode): void {
+  const current = from.querySelector(".explorer")
+  const next = to.querySelector(".explorer")
+  if (!current || !next) return
+  if (!current.classList.contains("collapsed")) return
+  next.classList.add("collapsed")
+  next.setAttribute("aria-expanded", "false")
+}
+
 export function registerEscapeHandler(outsideContainer: HTMLElement | null, cb: () => void) {
   if (!outsideContainer) return
   function click(this: HTMLElement, e: HTMLElementEventMap["click"]) {

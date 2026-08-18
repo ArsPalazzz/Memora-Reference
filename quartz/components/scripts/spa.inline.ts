@@ -3,6 +3,7 @@ import { FullSlug, RelativeURL, getFullSlug, normalizeRelativeURLs } from "../..
 import {
   fetchCanonical,
   isQuartzHtml,
+  preserveCollapsedExplorer,
   resolveClientUrl,
   siteBasePath,
   ensureSitePathname,
@@ -162,6 +163,7 @@ async function _navigate(url: URL, isBack: boolean = false) {
   html.body.appendChild(announcer)
 
   document.querySelector(".navigation-progress")?.remove()
+  preserveCollapsedExplorer(document, html)
   micromorph(document.body, html.body)
 
   // scroll into place and add history
