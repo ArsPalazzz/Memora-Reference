@@ -1,27 +1,4 @@
 
-### Zero conditional
-
-**Use**: facts
-
-If + to be, ... to be
-
-##### Example: 
-- if the water temperature is 100 degrees, it evaporates
-
-
-
-
-### First conditional
-
-**Use**: real situations in the future
-
-If + to be, ... will / can + V1
-
-##### Example: 
-- if you're at school today, you'll probably start working sometime in the 2020's
-
-
-
 
 ### Second conditional
 
