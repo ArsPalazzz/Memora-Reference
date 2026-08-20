@@ -55,13 +55,14 @@ figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
 
 .callout[data-callout="note"],
 .callout[data-callout="info"],
-.callout[data-callout="abstract"] {
-  --color: var(--secondary);
-  --border: color-mix(in srgb, var(--secondary) 35%, transparent);
-  --bg: color-mix(in srgb, var(--secondary) 8%, var(--light));
+.callout[data-callout="abstract"],
+.callout[data-callout="tip"],
+.callout[data-callout="example"] {
+  --color: rgb(78, 121, 237);
+  --border: color-mix(in srgb, rgb(78, 121, 237) 35%, transparent);
+  --bg: color-mix(in srgb, rgb(78, 121, 237) 10%, var(--light));
 }
 
-.callout[data-callout="example"],
 .callout[data-callout="quote"] {
   --border: color-mix(in srgb, var(--secondary) 25%, transparent);
   --bg: color-mix(in srgb, var(--secondary) 5%, var(--light));

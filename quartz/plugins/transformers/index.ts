@@ -1,1 +1,1 @@
-export {}
+export { ObsidianAdmonition } from "./obsidianAdmonition"
