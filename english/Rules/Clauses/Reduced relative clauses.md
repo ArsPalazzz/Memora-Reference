@@ -4,6 +4,8 @@
 
 Это **отдельная тема** от [[english/Rules/Clauses/Relative clauses|Relative clauses]]: сначала понимаешь полную форму, потом учишься сокращать.
 
+**Не путать с** [[english/Rules/Clauses/Participle clauses|participle clause]]: форма похожа (`-ing` / `V3`), но reduced relative = **причастие к существительному**, participle clause = **деепричастие к действию**. Подробно: [[english/Rules/Clauses/Reduced relative vs Participle clauses|Reduced relative vs Participle clauses]].
+
 ---
 
 ## Идея
@@ -107,7 +109,9 @@ noun + who/which + is/are + adjective  →  noun + adjective
 
 > **Knowing** the answer, she raised her hand.
 
-Это [[english/Rules/Clauses/Participle clauses|participle clause]] (обстоятельственный оборот), **не** reduced relative — он не стоит сразу после существительного.
+Это [[english/Rules/Clauses/Participle clauses|participle clause]] (обстоятельственный оборот), **не** reduced relative — он не стоит сразу после существительного и отвечает на *почему?*, а не на *какой?*.
+
+→ Сравнение: [[english/Rules/Clauses/Reduced relative vs Participle clauses|Reduced relative vs Participle clauses]]
 
 ---
 
@@ -179,4 +183,5 @@ noun + who/which + is/are + adjective  →  noun + adjective
 ## Связанные заметки
 
 - [[english/Rules/Clauses/Relative clauses|Relative clauses]] — полная форма
-- [[english/Rules/Clauses/Participle clauses|Participle clauses]] — причастные обороты (включая нерелятивные)
+- [[english/Rules/Clauses/Reduced relative vs Participle clauses|Reduced relative vs Participle clauses]] — причастие vs деепричастие
+- [[english/Rules/Clauses/Participle clauses|Participle clauses]] — обстоятельственные обороты

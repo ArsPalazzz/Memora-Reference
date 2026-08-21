@@ -43,7 +43,8 @@ title: English
 ### [[english/Rules/Clauses/Relative clauses|Clauses]]
 - [[english/Rules/Clauses/Relative clauses|Relative clauses]] — who, which, that, defining / non-defining
 - [[english/Rules/Clauses/Reduced relative clauses|Reduced relative clauses]] — who lives → living, who was invited → invited
-- [[english/Rules/Clauses/Participle clauses|Participle clauses]] — причастные обороты (шире, включая adverbial)
+- [[english/Rules/Clauses/Participle clauses|Participle clauses]] — обстоятельственные обороты (когда / почему / как)
+- [[english/Rules/Clauses/Reduced relative vs Participle clauses|Reduced relative vs Participle clauses]] — причастие vs деепричастие
 
 ### [[english/Rules/Inversion and emphasis/Cleft sentences|Inversion and emphasis]]
 - [[english/Rules/Inversion and emphasis/Cleft sentences|Cleft sentences]] — эмфаза: It was X who, What she did was…

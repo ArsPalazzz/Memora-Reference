@@ -1,20 +1,29 @@
+# Participle clauses
 
-## 🎯 **Зачем нужны Participle Clauses?**
+**Причастный / деепричастный оборот** — сжатое придаточное с `-ing`, `V3` или `having + V3`.
+
+В учебниках слово *participle clause* часто **шире**, чем нужно: туда кладут и [[english/Rules/Clauses/Reduced relative clauses|reduced relative]]. Ниже — в первую очередь **обстоятельственный** оборот (как русское **деепричастие**).
+
+**Не путать:** reduced relative описывает **существительное** (*какой?*); participle clause — **действие** (*когда / почему / как?*). Подробно: [[english/Rules/Clauses/Reduced relative vs Participle clauses|Reduced relative vs Participle clauses]].
+
+---
+
+## Зачем нужны
 
 Чтобы **заменить** более длинные конструкции:
 
-- **Сокращённые относительные** → [[english/Rules/Clauses/Reduced relative clauses|Reduced relative clauses]]
-- **Придаточные времени, причины, условия** (adverbial clauses)
+- придаточные **времени, причины, условия** (adverbial clauses) — основной случай ниже
+- иногда рядом обсуждают и [[english/Rules/Clauses/Reduced relative clauses|reduced relative]] (форма похожа, роль другая)
 
-**Пример замены relative → participle:**
-
-- Полное: **The woman who lives next door** is a doctor.
-- Сокращённое: **The woman living next door** is a doctor. → это reduced relative clause
-
-**Пример adverbial participle clause** (не про существительное):
+**Adverbial participle clause** (не про существительное):
 
 - Полное: **Because she knew** the answer, she raised her hand.
-- Participle: **Knowing** the answer, she raised her hand.
+- Participle: **Knowing** the answer, she raised her hand. _(Зная ответ…)_
+
+**Reduced relative** (для контраста — про существительное):
+
+- Полное: The woman **who lives** next door is a doctor.
+- Сокращённое: The woman **living** next door is a doctor.
 
 ---
 
@@ -98,13 +107,15 @@
 **Используй participle clauses, чтобы:**
 
 - Избежать повторения слов (_who was, which is_).
-    
-- Сделать текст стильным и "английским".
-    
+- Сделать текст стильным и «английским».
 - Показать связь действий (причина, время, условие) в одной фразе.
 
+---
 
+## Связанные заметки
 
-
+- [[english/Rules/Clauses/Reduced relative vs Participle clauses|Reduced relative vs Participle clauses]] — главная разница
+- [[english/Rules/Clauses/Reduced relative clauses|Reduced relative clauses]] — причастие к существительному
+- [[english/Rules/Clauses/Relative clauses|Relative clauses]] — полная форма *who/which*
 
 ![[Pasted image 20251227024430.png]]

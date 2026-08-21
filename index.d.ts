@@ -8,6 +8,7 @@ interface CustomEventMap {
   prenav: CustomEvent<{}>
   nav: CustomEvent<{ url: FullSlug }>
   themechange: CustomEvent<{ theme: "light" | "dark" }>
+  accentchange: CustomEvent<{ accent: string }>
   readermodechange: CustomEvent<{ mode: "on" | "off" }>
   render: CustomEvent<{}>
 }

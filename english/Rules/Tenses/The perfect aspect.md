@@ -59,7 +59,7 @@ to have been accepted
 
 Действие в прошлом, но **когда именно** — неважно или не сказано. Часто про **опыт**.
 
-> I**'ve seen** gorillas in the wild.  
+> I've seen gorillas in the wild.  
 > I **haven't been** to New York.
 
 | Present perfect | Past simple |
@@ -70,10 +70,10 @@ _Есть конкретное время (`last year`, `yesterday`, `in 2019`) 
 
 ### 2. for / since — началось раньше и продолжается (или есть результат сейчас)
 
-> I**'ve lived** here **for** two years. _(всё ещё живу)_  
-> I**'ve known** Ali **since** we were at school. _(всё ещё знаю)_  
+> I've lived here **for** two years. _(всё ещё живу)_  
+> I've known Ali **since** we were at school. _(всё ещё знаю)_  
 > Bats **have been protected** for many years. _(всё ещё защищены)_  
-> I can't play tennis because I**'ve hurt** my arm. _(прошлое → следствие сейчас)_
+> I can't play tennis because I've hurt my arm. _(прошлое → следствие сейчас)_
 
 ---
 
