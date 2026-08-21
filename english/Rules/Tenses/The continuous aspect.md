@@ -150,6 +150,7 @@ _Весь день занимался — акцент на длительнос
 
 ## Связанные заметки
 
+- [[english/Rules/Tenses/The perfect aspect|The perfect aspect]] — другой аспект: завершено до другого времени
 - [[english/Rules/Tenses/Present Perfect Continuous vs Past Continuous|Present Perfect Continuous vs Past Continuous]]
 - [[english/Rules/Tenses/Present Perfect Continuous vs Past Perfect Continuous|Present Perfect Continuous vs Past Perfect Continuous]]
 - [[english/Rules/Preferences and habits/Describing past and present habits|Describing habits]] — always + -ing (привычка с раздражением)

@@ -30,6 +30,7 @@ title: English
 
 ### [[english/Rules/Tenses/The continuous aspect|Tenses]]
 - [[english/Rules/Tenses/The continuous aspect|The continuous aspect]] — SpeakOut 4B: be + -ing, когда continuous vs simple
+- [[english/Rules/Tenses/The perfect aspect|The perfect aspect]] — SpeakOut 5B: have + V3, взгляд назад от одного времени к другому
 - [[english/Rules/Tenses/Future Continuous vs Future Perfect Continuous|Future Continuous vs Future Perfect Continuous]]
 - [[english/Rules/Tenses/Present Perfect Continuous vs Past Continuous|Present Perfect Continuous vs Past Continuous]]
 - [[english/Rules/Tenses/Present Perfect Continuous vs Past Perfect Continuous|Present Perfect Continuous vs Past Perfect Continuous]]
@@ -70,6 +71,8 @@ title: English
 Заметки по учебникам (не отдельные правила, а материал с занятий).
 - [[english/Rules/Course notes/SpeakOut/Describing habits|SpeakOut — Describing habits]]
 - [[english/Rules/Course notes/SpeakOut/Steering a conversation|SpeakOut — Steering a conversation]]
+- [[english/Rules/Course notes/SpeakOut/The continuous aspect 4B|SpeakOut — The continuous aspect 4B]]
+- [[english/Rules/Course notes/SpeakOut/The perfect aspect 5B|SpeakOut — The perfect aspect 5B]]
 
 ---
 
