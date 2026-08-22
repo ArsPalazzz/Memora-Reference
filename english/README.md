@@ -47,8 +47,17 @@ title: English
 - [[english/Rules/Clauses/Reduced relative vs Participle clauses|Reduced relative vs Participle clauses]] — причастие vs деепричастие
 
 ### [[english/Rules/Inversion and emphasis/Cleft sentences|Inversion and emphasis]]
-- [[english/Rules/Inversion and emphasis/Cleft sentences|Cleft sentences]] — эмфаза: It was X who, What she did was…
+- [[english/Rules/Inversion and emphasis/Cleft sentences|Cleft sentences]] — SpeakOut 2A: It was X who, What she did was…, continuous, без do с states
 - [[english/Rules/Inversion and emphasis/Inversion with negative adverbials|Inversion with negative adverbials]] (B2)
+
+### [[english/Rules/Ellipsis and substitution/Ellipsis and substitution|Ellipsis and substitution]]
+- [[english/Rules/Ellipsis and substitution/Ellipsis and substitution|Ellipsis and substitution]] — SpeakOut 2B: опускаем слова / one, so, not, do so
+
+### [[english/Rules/Comparisons/as if, as though|Comparisons]]
+- [[english/Rules/Comparisons/as if, as though|as if / as though]] — SpeakOut 3A: look/feel as if…; present = реально, past = нереально
+
+### [[english/Rules/Linking words/no matter|Linking words]]
+- [[english/Rules/Linking words/no matter|no matter]] — SpeakOut 3B: независимо от…; present после no matter; no matter what
 
 ### [[english/Rules/Preferences and habits/Talking about hypothetical preferences|Preferences and habits]]
 - [[english/Rules/Preferences and habits/Talking about hypothetical preferences|Talking about hypothetical preferences]] — SpeakOut: I'd rather, jump at the chance, no way would I ever…
@@ -67,10 +76,18 @@ title: English
 
 ### [[english/Rules/Communication/Steering a conversation towards a topic|Communication]]
 - [[english/Rules/Communication/Steering a conversation towards a topic|Steering a conversation]] — SpeakOut: gain time + steer на интервью
+- [[english/Rules/Communication/Comparing and evaluating ideas|Comparing and evaluating ideas]] — SpeakOut 2C: way/much/marginally… than; invaluable / waste of time
+- [[english/Rules/Communication/Engaging with other people's views|Engaging with other people's views]] — SpeakOut 3C: where you're coming from + countersuggestion
 
 ### [[english/Rules/Course notes/SpeakOut/Describing habits|Course notes]]
 Заметки по учебникам (не отдельные правила, а материал с занятий).
 - [[english/Rules/Course notes/SpeakOut/Describing habits|SpeakOut — Describing habits]]
+- [[english/Rules/Course notes/SpeakOut/Cleft sentences 2A|SpeakOut — Cleft sentences 2A]]
+- [[english/Rules/Course notes/SpeakOut/Ellipsis and substitution 2B|SpeakOut — Ellipsis and substitution 2B]]
+- [[english/Rules/Course notes/SpeakOut/Compare and evaluate ideas 2C|SpeakOut — Compare and evaluate ideas 2C]]
+- [[english/Rules/Course notes/SpeakOut/as if as though 3A|SpeakOut — as if / as though 3A]]
+- [[english/Rules/Course notes/SpeakOut/no matter 3B|SpeakOut — no matter 3B]]
+- [[english/Rules/Course notes/SpeakOut/Engage with other people's views 3C|SpeakOut — Engage with other people's views 3C]]
 - [[english/Rules/Course notes/SpeakOut/Steering a conversation|SpeakOut — Steering a conversation]]
 - [[english/Rules/Course notes/SpeakOut/The continuous aspect 4B|SpeakOut — The continuous aspect 4B]]
 - [[english/Rules/Course notes/SpeakOut/The perfect aspect 5B|SpeakOut — The perfect aspect 5B]]

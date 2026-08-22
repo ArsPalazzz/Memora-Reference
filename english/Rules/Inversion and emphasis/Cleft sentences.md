@@ -1,12 +1,14 @@
 # Cleft sentences
 
-**Cleft sentences** — сложные предложения для **эмфазы**: выделить **одну часть** фразы.
+SpeakOut 2A / B2 — **cleft sentences**: сложные предложения для **эмфазы** — выделить **одну часть** фразы.
 
 Особенно полезны в **письме** (нет интонации), но часто и в **речи**.
 
 ![[Cleft sentences - reference.png]]
 
-Источник: [test-english.com — Cleft sentences (B2)](https://test-english.com/grammar-points/b2/cleft-sentences/)
+Источники:
+- SpeakOut Advanced — Language bank 2A (p.21) → [[english/Rules/Course notes/SpeakOut/Cleft sentences 2A|исходная страница]]
+- [test-english.com — Cleft sentences (B2)](https://test-english.com/grammar-points/b2/cleft-sentences/)
 
 ---
 
@@ -88,6 +90,12 @@ _**Место, где** мы встретились — **кафе у станц
 
 **What** или **All** (сильнее) вместо *the thing that*.
 
+Формула (SpeakOut):
+
+```
+What + subject + verb + is/was + …
+```
+
 > **The thing that** Sheila hid was the book.  
 > = **What** Sheila hid was the book.  
 > = **All** Sheila hid was the book. _(ещё сильнее)_
@@ -98,15 +106,35 @@ _**Место, где** мы встретились — **кафе у станц
 > **All** I want is some peace and quiet.  
 > _**Всё, что** я хочу — тишина и покой._
 
+> They want to win the competition.  
+> → **What they want is** to win the competition.
+
+> We enjoy competing against other teams.  
+> → **What we enjoy is** competing against other teams.
+
 **Связь с твоей фразой:** *one thing **which is** popping up* — похожая логика (выделить одну мысль), но это **не** полная cleft-конструкция. Близче: **What keeps popping up is…**
 
 → [[english/Examples/one thing which is popping up|one thing which is popping up]]
+
+### Объект vs всё действие
+
+Одна и та же фраза — два разных акцента:
+
+| Акцент | Конструкция | Пример |
+|---|---|---|
+| **объект** | What + S + V + be + **объект** | He faked an injury. → **What he faked was** an injury. |
+| **всё действие** | What + S + **do** + be + **infinitive**… | He faked an injury. → **What he did was** fake an injury. |
+
+Ещё примеры на объект:
+
+> I'll send you the link for the website. → **What I'll send you is** the link for the website.  
+> They changed their kit. → **What they changed was** their kit.
 
 ---
 
 ## 4. What + subject + do/does/did + is/was + (to) infinitive
 
-Акцент на **действии** (глаголе).
+Акцент на **всём действии** (глагол + объект и т.д.). Добавляешь форму **do** в том же времени, что исходное предложение; основной глагол — **infinitive**.
 
 > **What Sheila did was (to)** hide the book.
 
@@ -121,13 +149,34 @@ _**Что тебе следует сделать** — **отложить** де
 
 _**Всё, что он сделал** — **закричал**._
 
+> She **dived** in the penalty area. → **What she did was dive** in the penalty area.  
+> We'll **watch** them carefully. → **What we'll do is watch** them carefully.  
+> I'll **send** you the link. → **What I'll do is send** you the link.
+
 ### Формула
 
 ```
-What + subject + did/does/should do + is/was + (to) + infinitive
+What + subject + do/does/did/will do/… + is/was + (to) + infinitive
 ```
 
 **to** после *is/was* — можно **с** или **без** (*hide* / *to hide*).
+
+### Continuous: do + -ing, глагол тоже -ing
+
+Если исходное предложение в continuous — и **do**, и основной глагол в **-ing**:
+
+> They **are playing** for time. → **What they are doing is playing** for time.  
+> She **was pretending** to be injured. → **What she was doing was pretending** to be injured.
+
+### Feelings / states — без do
+
+С глаголами **чувств и состояний** (*love, have, know, want, enjoy…*) **не** ставь *do*:
+
+| ✅ | ❌ |
+|---|---|
+| **What I love is** competitive games. | What I **do** is love competitive games. |
+| **What she has is** a lot of talent. | What she **does** is have a lot of talent. |
+| **What they want is** to win. | What they **do** is want to win. |
 
 ---
 
@@ -151,8 +200,9 @@ _**Что происходит** — он боится потерять влож
 |---|---|---|
 | Noun cleft | The person who… / The thing that… | элемент |
 | It-cleft | It was X who/that… | элемент |
-| What-cleft | What I want is… | элемент (= the thing that) |
-| Action cleft | What she did was (to)… | **действие** |
+| What-cleft | What I want is… / What he faked was… | элемент / объект |
+| Action cleft | What she did was (to)… | **всё действие** |
+| Continuous action | What they are doing is playing… | действие в процессе |
 | Sentence cleft | What happened was that… | **всё событие** |
 
 ---
@@ -183,7 +233,9 @@ _**Всё, что** я говорю — нам нужно больше врем�
 |---|---|
 | It's on Monday **when** I call. | It's on Monday **that** I call. |
 | It's under the bed **which**… | It's under the bed **that**… |
-| What she did was **hiding** | What she did was **(to) hide** |
+| What she did was **hiding** *(simple past)* | What she did was **(to) hide** |
+| What she was doing was **pretend** | What she was doing was **pretending** |
+| What I **do** is love games | **What I love is** games |
 | The person **which** called | The person **who** called |
 
 ---
@@ -194,13 +246,17 @@ _**Всё, что** я говорю — нам нужно больше врем�
 - **It was X who/that** — универсальный it-cleft
 - После **обстоятельства** (on Monday, under the bed) → **that**, не which/when
 - **What** = the thing that; **All** = ещё сильнее
-- **What she did was (to)…** — акцент на **действии**
+- **What he faked was** an injury — акцент на **объекте**; **What he did was fake** an injury — на **всём действии**
+- **What she did was (to)…** — *do* в том же времени + infinitive
+- Continuous: **What they are doing is playing…**
+- Feelings/states (*love, have, want…*): **без** *do*
 - **What happened was that…** — акцент на **событии**
 
 ---
 
 ## Связанные заметки
 
+- [[english/Rules/Course notes/SpeakOut/Cleft sentences 2A|SpeakOut — исходная страница (2A)]]
 - [[english/Rules/Clauses/Relative clauses|Relative clauses]]
 - [[english/Rules/Inversion and emphasis/Inversion with negative adverbials|Inversion with negative adverbials]] — другой способ эмфазы
 - [[english/Study plan/Homework Pages/3. March/4|Homework — March 4]]

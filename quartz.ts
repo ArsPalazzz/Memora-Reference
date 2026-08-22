@@ -10,10 +10,12 @@ componentRegistry.setOptionOverrides("@quartz-community/explorer", {
   filterFn: (node) => {
     const name = (node.slugSegment || "").toLowerCase()
     if (name === "tags") return false
+    if (name === "course-notes") return false
     const slug = (node.slug || "").toLowerCase()
     if (slug.indexOf("/inbox") !== -1) return false
     if (slug.indexOf("inbox/") !== -1) return false
     if (slug.indexOf("study-plan") !== -1) return false
+    if (slug.indexOf("course-notes") !== -1) return false
     return true
   },
   mapFn: (node) => {

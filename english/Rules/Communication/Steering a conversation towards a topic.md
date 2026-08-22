@@ -161,3 +161,5 @@ _**Довольно широкая тема. Может, просто расск
 
 - [[english/Rules/Course notes/SpeakOut/Steering a conversation|SpeakOut — исходная страница]]
 - [[english/Rules/Preferences and habits/Talking about hypothetical preferences|Talking about hypothetical preferences]] — другой SpeakOut «How to…»
+- [[english/Rules/Communication/Comparing and evaluating ideas|Comparing and evaluating ideas]] — SpeakOut 2C «How to…»
+- [[english/Rules/Communication/Engaging with other people's views|Engaging with other people's views]] — SpeakOut 3C «How to…»
