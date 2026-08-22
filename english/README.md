@@ -59,6 +59,13 @@ title: English
 ### [[english/Rules/Linking words/no matter|Linking words]]
 - [[english/Rules/Linking words/no matter|no matter]] — SpeakOut 3B: независимо от…; present после no matter; no matter what
 
+### [[english/Rules/Prepositions/at, in, on (time)|Prepositions]]
+- [[english/Rules/Prepositions/at, in, on (time)|at / in / on (time)]] — точка / период / день; last/next/every/this без предлога
+- [[english/Rules/Prepositions/at, in, on (place)|at / in / on (place)]] — точка / внутри / поверхность; home/work без the; bus/TV = on
+
+### [[english/Rules/Reported speech/Reported speech|Reported speech]]
+- [[english/Rules/Reported speech/Reported speech|Reported / indirect speech]] — tense backshift; say vs tell; pronoun changes; that можно опустить
+
 ### [[english/Rules/Preferences and habits/Talking about hypothetical preferences|Preferences and habits]]
 - [[english/Rules/Preferences and habits/Talking about hypothetical preferences|Talking about hypothetical preferences]] — SpeakOut: I'd rather, jump at the chance, no way would I ever…
 - [[english/Rules/Preferences and habits/Describing past and present habits|Describing past and present habits]] — SpeakOut 1A: will, always + -ing, tend to, keep on…
