@@ -31,6 +31,7 @@ title: English
 ### [[english/Rules/Tenses/The continuous aspect|Tenses]]
 - [[english/Rules/Tenses/The continuous aspect|The continuous aspect]] — SpeakOut 4B: be + -ing, когда continuous vs simple
 - [[english/Rules/Tenses/The perfect aspect|The perfect aspect]] — SpeakOut 5B: have + V3, взгляд назад от одного времени к другому
+- [[english/Rules/Tenses/Stative verbs|Stative verbs]] — non-action: без continuous; have/be/think/look и sense verbs
 - [[english/Rules/Tenses/Future Continuous vs Future Perfect Continuous|Future Continuous vs Future Perfect Continuous]]
 - [[english/Rules/Tenses/Present Perfect Continuous vs Past Continuous|Present Perfect Continuous vs Past Continuous]]
 - [[english/Rules/Tenses/Present Perfect Continuous vs Past Perfect Continuous|Present Perfect Continuous vs Past Perfect Continuous]]
@@ -39,6 +40,14 @@ title: English
 - [[english/Rules/Modal verbs/Should|Should]]
 - [[english/Rules/Modal verbs/Modal verbs + Perfect Infinitive|Modal verbs + Perfect Infinitive]]
 - [[english/Rules/Modal verbs/had better, would rather|had better, would rather]]
+- [[english/Rules/Modal verbs/may vs might|may / might]] — possibility / speculation; permission только may; без to
+
+### [[english/Rules/Gerunds and infinitives/Infinitive vs gerund|Gerunds and infinitives]]
+- [[english/Rules/Gerunds and infinitives/Infinitive vs gerund|Infinitive vs gerund]] — -ing / bare / to + V; списки глаголов; not + -ing / not to…
+
+### [[english/Rules/Verbs/go|Verbs]]
+- [[english/Rules/Verbs/go|go]] — go + -ing; go to (work/school); go to a/the; go for a; go on a
+- [[english/Rules/Verbs/get|get]] — get + noun/adj; get to = arrive; get home/here/there без to
 
 ### [[english/Rules/Clauses/Relative clauses|Clauses]]
 - [[english/Rules/Clauses/Relative clauses|Relative clauses]] — who, which, that, defining / non-defining
@@ -52,28 +61,41 @@ title: English
 
 ### [[english/Rules/Ellipsis and substitution/Ellipsis and substitution|Ellipsis and substitution]]
 - [[english/Rules/Ellipsis and substitution/Ellipsis and substitution|Ellipsis and substitution]] — SpeakOut 2B: опускаем слова / one, so, not, do so
+- [[english/Rules/Ellipsis and substitution/so and neither|so / neither]] — So am I / Neither do I; too / either; nor = neither
 
 ### [[english/Rules/Comparisons/as if, as though|Comparisons]]
 - [[english/Rules/Comparisons/as if, as though|as if / as though]] — SpeakOut 3A: look/feel as if…; present = реально, past = нереально
 
 ### [[english/Rules/Linking words/no matter|Linking words]]
 - [[english/Rules/Linking words/no matter|no matter]] — SpeakOut 3B: независимо от…; present после no matter; no matter what
+- [[english/Rules/Linking words/however, although, because, so|however / although / because / so]] — contrast, reason, result; before / after / while / when…
+- [[english/Rules/Linking words/no longer, any longer, anymore|no longer / any longer / anymore]] — mid vs end; + vs −; anymore ≠ any more
 
 ### [[english/Rules/Prepositions/at, in, on (time)|Prepositions]]
 - [[english/Rules/Prepositions/at, in, on (time)|at / in / on (time)]] — точка / период / день; last/next/every/this без предлога
 - [[english/Rules/Prepositions/at, in, on (place)|at / in / on (place)]] — точка / внутри / поверхность; home/work без the; bus/TV = on
+- [[english/Rules/Prepositions/next to, under, between|next to / under / between…]] — рядом, между, напротив, спереди/сзади, под, над
+- [[english/Rules/Prepositions/prepositions of movement|prepositions of movement]] — to/into/across…; get on/off vs into/out of; by car vs drive
+- [[english/Rules/Prepositions/on time vs in time, at the end vs in the end|on time / in time · at the end / in the end]] — по расписанию vs успеть; в конце X vs в итоге
 
 ### [[english/Rules/Reported speech/Reported speech|Reported speech]]
 - [[english/Rules/Reported speech/Reported speech|Reported / indirect speech]] — tense backshift; say vs tell; pronoun changes; that можно опустить
+
+### [[english/Rules/Questions/Subject and object questions|Questions]]
+- [[english/Rules/Questions/Subject and object questions|Subject and object questions]] — who won vs who did you call; предлог в конце (with/for/about)
 
 ### [[english/Rules/Preferences and habits/Talking about hypothetical preferences|Preferences and habits]]
 - [[english/Rules/Preferences and habits/Talking about hypothetical preferences|Talking about hypothetical preferences]] — SpeakOut: I'd rather, jump at the chance, no way would I ever…
 - [[english/Rules/Preferences and habits/Describing past and present habits|Describing past and present habits]] — SpeakOut 1A: will, always + -ing, tend to, keep on…
 - [[english/Rules/Preferences and habits/used to, would, be used to, get used to|used to / would / be used to / get used to]]
+- [[english/Rules/Preferences and habits/used to, didn't use to|used to / didn't use to]] — прошлые привычки; didn't use to; usually (present); vs past simple
 - [[english/Rules/Preferences and habits/I'd rather, I'd sooner, I would prefer, I prefer|I'd rather / I'd sooner / I prefer]]
 
 ### [[english/Rules/Pronouns and determiners/other, others, the other, the others, another|Pronouns and determiners]]
 - [[english/Rules/Pronouns and determiners/other, others, the other, the others, another|other / others / the other / another]]
+- [[english/Rules/Pronouns and determiners/much, many, a lot of, a little, a few|much / many / a lot of / a little / a few]] — countable vs uncountable; −/? vs +; no / any / none
+- [[english/Rules/Pronouns and determiners/this vs it|this vs it]] — рядом / представление vs повтор; время, погода; It's + adj…
+- [[english/Rules/Pronouns and determiners/most, most of, the most|most / most of / the most]] — majority vs superlative; most of + the/my/us…
 
 ### [[english/Rules/Impersonal structures/It's said, it's assumed|Impersonal structures]]
 - [[english/Rules/Impersonal structures/It's said, it's assumed|It's said / it's assumed]]
