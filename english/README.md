@@ -107,6 +107,7 @@ title: English
 - [[english/Rules/Communication/Steering a conversation towards a topic|Steering a conversation]] — SpeakOut: gain time + steer на интервью
 - [[english/Rules/Communication/Comparing and evaluating ideas|Comparing and evaluating ideas]] — SpeakOut 2C: way/much/marginally… than; invaluable / waste of time
 - [[english/Rules/Communication/Engaging with other people's views|Engaging with other people's views]] — SpeakOut 3C: where you're coming from + countersuggestion
+- [[english/Rules/Communication/How to summarise|How to summarise]] — SpeakOut 5C: so what you mean is…; basically / in a nutshell; to recap
 
 ### [[english/Rules/Course notes/SpeakOut/Describing habits|Course notes]]
 Заметки по учебникам (не отдельные правила, а материал с занятий).
@@ -120,6 +121,7 @@ title: English
 - [[english/Rules/Course notes/SpeakOut/Steering a conversation|SpeakOut — Steering a conversation]]
 - [[english/Rules/Course notes/SpeakOut/The continuous aspect 4B|SpeakOut — The continuous aspect 4B]]
 - [[english/Rules/Course notes/SpeakOut/The perfect aspect 5B|SpeakOut — The perfect aspect 5B]]
+- [[english/Rules/Course notes/SpeakOut/How to summarise 5C|SpeakOut — How to summarise 5C]]
 
 ---
 
