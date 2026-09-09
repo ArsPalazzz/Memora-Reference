@@ -48,6 +48,7 @@ title: English
 ### [[english/Rules/Verbs/go|Verbs]]
 - [[english/Rules/Verbs/go|go]] — go + -ing; go to (work/school); go to a/the; go for a; go on a
 - [[english/Rules/Verbs/get|get]] — get + noun/adj; get to = arrive; get home/here/there без to
+- [[english/Rules/Verbs/do vs make|do vs make]] — do = без физического результата; make = создать; make your bed
 
 ### [[english/Rules/Clauses/Relative clauses|Clauses]]
 - [[english/Rules/Clauses/Relative clauses|Relative clauses]] — who, which, that, defining / non-defining
