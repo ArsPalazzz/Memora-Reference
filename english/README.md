@@ -86,6 +86,7 @@ title: English
 
 ### [[english/Rules/Questions/Subject and object questions|Questions]]
 - [[english/Rules/Questions/Subject and object questions|Subject and object questions]] — who won vs who did you call; предлог в конце (with/for/about)
+- [[english/Rules/Questions/I wonder|I wonder / No wonder]] — if/what/why + порядок утверждения; I was wondering if you could…
 
 ### [[english/Rules/Preferences and habits/Talking about hypothetical preferences|Preferences and habits]]
 - [[english/Rules/Preferences and habits/Talking about hypothetical preferences|Talking about hypothetical preferences]] — SpeakOut: I'd rather, jump at the chance, no way would I ever…
@@ -133,6 +134,7 @@ title: English
 Конкретные предложения с объяснением, почему используется та или иная конструкция.
 
 - [[english/Examples/I'd never normally meet|I'd never normally meet]] — `I'd` = `I would` в значении «в обычной жизни бы не…»
+- [[english/Examples/Didn't I tell you there would be consequences|Didn't I tell you there would be…]] — future in the past: will→would, make→made; упрёк «я же говорил»
 - [[english/Examples/voice her opinions|voice her opinions]] — `voice` как глагол (conversion)
 - [[english/Examples/a good habit to get into|a good habit to get into]] — `get into` = приобрести привычку
 - [[english/Examples/no way would I ever|no way would I ever]] — инверсия: `No way would I ever…`
@@ -149,6 +151,10 @@ title: English
 - [[english/Words/For a start|for a start]] — «во-первых», первый аргумент в списке
 - [[english/Words/put off|put off]] — `be put off by` = оттолкнуло; также «отложить»
 - [[english/Words/What's the appeal|what's the appeal]] — «в чём прелесть?», «что в этом такого?»
+- [[english/Words/What are you on about|what are you on about?]] — UK: «ты о чём?»; неформально / скептично; не с боссом
+- [[english/Words/mind|mind]] — I don't mind; Do/Would you mind…?; Never mind; ответы No = можно
+- [[english/Words/ask out|ask out]] — позвать на свидание; ask her out / ask out for coffee
+- [[english/Words/dedicated, purely|dedicated / purely]] — dedicated **to** (не for); purely = exclusively; tattoo dedicated purely to you
 - [[english/Words/to some extent|to some extent]] — «отчасти», «в некоторой степени»
 - [[english/Words/outdoor, indoor, outdoors, indoors|outdoor / indoor / outdoors / indoors]] — прилагательные vs наречия
 - [[english/Words/sophisticated|sophisticated]] — продвинутый / изысканный / сведущий
