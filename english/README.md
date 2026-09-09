@@ -55,6 +55,7 @@ title: English
 - [[english/Rules/Clauses/Reduced relative clauses|Reduced relative clauses]] — who lives → living, who was invited → invited
 - [[english/Rules/Clauses/Participle clauses|Participle clauses]] — обстоятельственные обороты (когда / почему / как)
 - [[english/Rules/Clauses/Reduced relative vs Participle clauses|Reduced relative vs Participle clauses]] — причастие vs деепричастие
+- [[english/Rules/Clauses/Parallel structure|Parallel structure]] — and/or: одинаковая форма (-ing, to+V, noun)
 
 ### [[english/Rules/Inversion and emphasis/Cleft sentences|Inversion and emphasis]]
 - [[english/Rules/Inversion and emphasis/Cleft sentences|Cleft sentences]] — SpeakOut 2A: It was X who, What she did was…, continuous, без do с states
@@ -66,6 +67,7 @@ title: English
 
 ### [[english/Rules/Comparisons/as if, as though|Comparisons]]
 - [[english/Rules/Comparisons/as if, as though|as if / as though]] — SpeakOut 3A: look/feel as if…; present = реально, past = нереально
+- [[english/Rules/Comparisons/than it is now|than it is now]] — ellipsis в сравнениях: than it is/was now, не than now
 
 ### [[english/Rules/Linking words/no matter|Linking words]]
 - [[english/Rules/Linking words/no matter|no matter]] — SpeakOut 3B: независимо от…; present после no matter; no matter what
@@ -155,6 +157,7 @@ title: English
 - [[english/Words/spontaneous|spontaneous]] — спонтанный, без плана, по импульсу
 - [[english/Words/staged|staged]] — постановочный (фото); инсценированный
 - [[english/Words/affect vs influence|affect vs influence]] — воздействовать vs влиять на решения/мнения
+- [[english/Words/will and knowledge|will and knowledge]] — коллокации: will to learn; thirst for knowledge; gain knowledge
 - [[english/Words/towards|towards]] — направление, отношение к, прогресс к, к концу периода
 - [[english/Words/approachable|approachable]] — доступный, к нему легко подойти; `be more approachable`
 - [[english/Words/profound effect|profound effect]] — глубокое, серьёзное влияние
