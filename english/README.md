@@ -32,6 +32,7 @@ title: English
 - [[english/Rules/Tenses/The continuous aspect|The continuous aspect]] — SpeakOut 4B: be + -ing, когда continuous vs simple
 - [[english/Rules/Tenses/The perfect aspect|The perfect aspect]] — SpeakOut 5B: have + V3, взгляд назад от одного времени к другому
 - [[english/Rules/Tenses/Stative verbs|Stative verbs]] — non-action: без continuous; have/be/think/look и sense verbs
+- [[english/Rules/Tenses/Tense agreement (when to backshift)|Tense agreement / backshift]] — когда сдвигать времена после said/told; когда present ок
 - [[english/Rules/Tenses/Future Continuous vs Future Perfect Continuous|Future Continuous vs Future Perfect Continuous]]
 - [[english/Rules/Tenses/Present Perfect Continuous vs Past Continuous|Present Perfect Continuous vs Past Continuous]]
 - [[english/Rules/Tenses/Present Perfect Continuous vs Past Perfect Continuous|Present Perfect Continuous vs Past Perfect Continuous]]
@@ -84,6 +85,8 @@ title: English
 ### [[english/Rules/Reported speech/Reported speech|Reported speech]]
 - [[english/Rules/Reported speech/Reported speech|Reported / indirect speech]] — tense backshift; say vs tell; pronoun changes; that можно опустить
 
+См. также: [[english/Rules/Tenses/Tense agreement (when to backshift)|Когда согласовывать времена]] — когда backshift нужен, а когда present ок.
+
 ### [[english/Rules/Questions/Subject and object questions|Questions]]
 - [[english/Rules/Questions/Subject and object questions|Subject and object questions]] — who won vs who did you call; предлог в конце (with/for/about)
 - [[english/Rules/Questions/I wonder|I wonder / No wonder]] — if/what/why + порядок утверждения; I was wondering if you could…
@@ -97,6 +100,7 @@ title: English
 
 ### [[english/Rules/Pronouns and determiners/other, others, the other, the others, another|Pronouns and determiners]]
 - [[english/Rules/Pronouns and determiners/other, others, the other, the others, another|other / others / the other / another]]
+- [[english/Rules/Pronouns and determiners/Reflexive pronouns|Reflexive pronouns]] — myself/yourself… когда subject = object; money → it
 - [[english/Rules/Pronouns and determiners/much, many, a lot of, a little, a few|much / many / a lot of / a little / a few]] — countable vs uncountable; −/? vs +; no / any / none
 - [[english/Rules/Pronouns and determiners/this vs it|this vs it]] — рядом / представление vs повтор; время, погода; It's + adj…
 - [[english/Rules/Pronouns and determiners/most, most of, the most|most / most of / the most]] — majority vs superlative; most of + the/my/us…
@@ -135,6 +139,7 @@ title: English
 
 - [[english/Examples/I'd never normally meet|I'd never normally meet]] — `I'd` = `I would` в значении «в обычной жизни бы не…»
 - [[english/Examples/Didn't I tell you there would be consequences|Didn't I tell you there would be…]] — future in the past: will→would, make→made; упрёк «я же говорил»
+- [[english/Examples/Gym text grammar|Gym text grammar]] — past perfect + present; start by + -ing; would be to; lead
 - [[english/Examples/voice her opinions|voice her opinions]] — `voice` как глагол (conversion)
 - [[english/Examples/a good habit to get into|a good habit to get into]] — `get into` = приобрести привычку
 - [[english/Examples/no way would I ever|no way would I ever]] — инверсия: `No way would I ever…`
@@ -170,3 +175,4 @@ title: English
 - [[english/Words/well aware of|well aware of]] — хорошо знать / прекрасно осознавать
 - [[english/Words/pop up|pop up]] — всплывать (мысль, проблема, окно)
 - [[english/Words/Vocabulary notes/restricted, prohibited, implement and similar|Vocabulary notes]] — тематические подборки слов
+- [[english/Words/Vocabulary notes/gym text phrases|gym text phrases]] — head to, take it steady, in terms of, catch up, stick to, rut…
