@@ -56,6 +56,8 @@ We often use **never** to talk about experiences. In that case, we normally use
 
 Practice: https://test-english.com/grammar-points/b2/inversion-negative-adverbials/
 
+**SpeakOut 6A (короче, с примерами учебника):** [[english/Rules/Inversion and emphasis/Inversion (SpeakOut 6A)|Inversion (SpeakOut 6A)]]
+
 ---
 
 ## Разговорная инверсия: no way would I ever

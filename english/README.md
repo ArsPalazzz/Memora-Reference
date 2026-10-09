@@ -60,7 +60,11 @@ title: English
 
 ### [[english/Rules/Inversion and emphasis/Cleft sentences|Inversion and emphasis]]
 - [[english/Rules/Inversion and emphasis/Cleft sentences|Cleft sentences]] — SpeakOut 2A: It was X who, What she did was…, continuous, без do с states
+- [[english/Rules/Inversion and emphasis/Inversion (SpeakOut 6A)|Inversion (SpeakOut 6A)]] — Never have I…; Under no circumstances; Not only; Only later; do/did
 - [[english/Rules/Inversion and emphasis/Inversion with negative adverbials|Inversion with negative adverbials]] (B2)
+
+### [[english/Rules/Passive/Passive structures|Passive]]
+- [[english/Rules/Passive/Passive structures|Passive structures]] — SpeakOut 6B: when passive; to be / have been / being / having been + V3
 
 ### [[english/Rules/Ellipsis and substitution/Ellipsis and substitution|Ellipsis and substitution]]
 - [[english/Rules/Ellipsis and substitution/Ellipsis and substitution|Ellipsis and substitution]] — SpeakOut 2B: опускаем слова / one, so, not, do so
@@ -130,6 +134,8 @@ title: English
 - [[english/Rules/Course notes/SpeakOut/The continuous aspect 4B|SpeakOut — The continuous aspect 4B]]
 - [[english/Rules/Course notes/SpeakOut/The perfect aspect 5B|SpeakOut — The perfect aspect 5B]]
 - [[english/Rules/Course notes/SpeakOut/How to summarise 5C|SpeakOut — How to summarise 5C]]
+- [[english/Rules/Course notes/SpeakOut/Inversion 6A|SpeakOut — Inversion 6A]]
+- [[english/Rules/Course notes/SpeakOut/Passive structures 6B|SpeakOut — Passive structures 6B]]
 
 ---
 
