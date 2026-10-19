@@ -65,6 +65,7 @@ title: English
 
 ### [[english/Rules/Passive/Passive structures|Passive]]
 - [[english/Rules/Passive/Passive structures|Passive structures]] — SpeakOut 6B: when passive; to be / have been / being / having been + V3
+- [[english/Rules/Passive/Passives and causatives|Passives and causatives]] — impersonal; 2 objects; avoid continuous passive; get/have sth done
 
 ### [[english/Rules/Ellipsis and substitution/Ellipsis and substitution|Ellipsis and substitution]]
 - [[english/Rules/Ellipsis and substitution/Ellipsis and substitution|Ellipsis and substitution]] — SpeakOut 2B: опускаем слова / one, so, not, do so
@@ -110,7 +111,7 @@ title: English
 - [[english/Rules/Pronouns and determiners/most, most of, the most|most / most of / the most]] — majority vs superlative; most of + the/my/us…
 
 ### [[english/Rules/Impersonal structures/It's said, it's assumed|Impersonal structures]]
-- [[english/Rules/Impersonal structures/It's said, it's assumed|It's said / it's assumed]]
+- [[english/Rules/Impersonal structures/It's said, it's assumed|It's said / it's assumed]] — см. также [[english/Rules/Passive/Passives and causatives|Passives and causatives]]
 
 ### [[english/Rules/Word formation/Conversion (zero derivation)|Word formation]]
 - [[english/Rules/Word formation/Conversion (zero derivation)|Conversion (zero derivation)]] — noun → verb без смены формы (`voice`, `ship`, `email`)

@@ -112,3 +112,5 @@ have been + V3       → пассив про прошлое (infinitive)
 being + V3           → пассив-gerund
 having been + V3     → пассив-gerund / participle про прошлое
 ```
+
+См. также: [[english/Rules/Passive/Passives and causatives|Passives and causatives]] — impersonal, два объекта, causatives (*get/have done*)
