@@ -120,6 +120,7 @@ title: English
 - [[english/Rules/Communication/Comparing and evaluating ideas|Comparing and evaluating ideas]] — SpeakOut 2C: way/much/marginally… than; invaluable / waste of time
 - [[english/Rules/Communication/Engaging with other people's views|Engaging with other people's views]] — SpeakOut 3C: where you're coming from + countersuggestion
 - [[english/Rules/Communication/How to summarise|How to summarise]] — SpeakOut 5C: so what you mean is…; basically / in a nutshell; to recap
+- [[english/Rules/Communication/How to negotiate in a dispute|How to negotiate in a dispute]] — SpeakOut 6C: complain → offer → accept
 
 ### [[english/Rules/Course notes/SpeakOut/Describing habits|Course notes]]
 Заметки по учебникам (не отдельные правила, а материал с занятий).
@@ -136,6 +137,7 @@ title: English
 - [[english/Rules/Course notes/SpeakOut/How to summarise 5C|SpeakOut — How to summarise 5C]]
 - [[english/Rules/Course notes/SpeakOut/Inversion 6A|SpeakOut — Inversion 6A]]
 - [[english/Rules/Course notes/SpeakOut/Passive structures 6B|SpeakOut — Passive structures 6B]]
+- [[english/Rules/Course notes/SpeakOut/Negotiate in a dispute 6C|SpeakOut — Negotiate in a dispute 6C]]
 
 ---
 
