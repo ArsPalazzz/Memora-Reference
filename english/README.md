@@ -67,6 +67,9 @@ title: English
 - [[english/Rules/Passive/Passive structures|Passive structures]] — SpeakOut 6B: when passive; to be / have been / being / having been + V3
 - [[english/Rules/Passive/Passives and causatives|Passives and causatives]] — impersonal; 2 objects; avoid continuous passive; get/have sth done
 
+### [[english/Rules/Adverbials/Adverbials|Adverbials]]
+- [[english/Rules/Adverbials/Adverbials|Adverbials]] — SpeakOut 7A: manner / time / frequency / intensifiers / sentence adverbials
+
 ### [[english/Rules/Ellipsis and substitution/Ellipsis and substitution|Ellipsis and substitution]]
 - [[english/Rules/Ellipsis and substitution/Ellipsis and substitution|Ellipsis and substitution]] — SpeakOut 2B: опускаем слова / one, so, not, do so
 - [[english/Rules/Ellipsis and substitution/so and neither|so / neither]] — So am I / Neither do I; too / either; nor = neither
@@ -139,6 +142,7 @@ title: English
 - [[english/Rules/Course notes/SpeakOut/Inversion 6A|SpeakOut — Inversion 6A]]
 - [[english/Rules/Course notes/SpeakOut/Passive structures 6B|SpeakOut — Passive structures 6B]]
 - [[english/Rules/Course notes/SpeakOut/Negotiate in a dispute 6C|SpeakOut — Negotiate in a dispute 6C]]
+- [[english/Rules/Course notes/SpeakOut/Adverbials 7A|SpeakOut — Adverbials 7A]]
 
 ---
 
